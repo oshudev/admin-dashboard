@@ -87,6 +87,16 @@ body {
     background-color: var(--neutral-200);
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
 .button {
     display: block;
     padding: var(--spacing-200) var(--spacing-300);
@@ -121,4 +131,67 @@ body {
 
 .avatar--lg {
     --dim: 4.25rem;
+}
+
+.sidebar {
+    position: sticky;
+    max-width: 256px;
+    height: 100vh;
+    padding: var(--spacing-600) var(--spacing-300);
+    color: var(--neutral-100);
+    background-color: var(--secondary-blue);
+}
+
+.sidebar__logo {
+    display: flex;
+    align-items: center;
+    column-gap: var(--spacing-300);
+    margin-bottom: 4rem;
+    padding-inline: var(--spacing-200);
+    font-size: var(--font-size-500);
+    font-weight: var(--font-bold);
+    letter-spacing: 0.02em;
+}
+
+.primary-nav {
+    margin-bottom: var(--spacing-600);
+}
+
+.sidebar__nav-list {
+    display: grid;
+    row-gap: var(--spacing-100);
+    padding: 0;
+}
+
+.sidebar__nav-item {
+    padding: var(--spacing-200) var(--spacing-300);
+}
+
+.sidebar__nav-item .sidebar-nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: var(--spacing-200);
+    font-size: var(--font-size-400);
+}
+
+.sidebar__nav-item .sidebar-nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    transform: scaleX(0);
+    transform-origin: left;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: var(--neutral-100);
+    transition: transform 300ms ease;
+}
+
+.sidebar__nav-item .sidebar-nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+.sidebar__nav-item .sidebar-nav-link img {
+    width: 1.5rem;
 }
