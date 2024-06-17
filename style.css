@@ -79,3 +79,46 @@ h6 {
 #__next {
     isolation: isolate;
 }
+
+body {
+    font-family: var(--default-ff);
+    font-size: var(--font-size-300);
+    color: var(--neutral-500);
+    background-color: var(--neutral-200);
+}
+
+.button {
+    display: block;
+    padding: var(--spacing-200) var(--spacing-300);
+    min-width: 100px;
+    font-size: var(--font-size-300);
+    font-weight: var(--font-semi-bold);
+    text-align: center;
+    color: var(--neutral-100);
+    background-color: var(--secondary-blue);
+    border: 2px solid var(--secondary-blue);
+    border-radius: var(--rounding-pill);
+    transition: color 300ms ease, background-color 300ms ease;
+}
+
+.button:hover,
+.button:active {
+    color: var(--secondary-blue);
+    background-color: transparent;
+}
+
+.avatar {
+    --dim: 2rem;
+    display: block;
+    padding: var(--spacing-100);
+    background-color: var(--primary-yellow);
+    border-radius: var(--rounding-circle);
+}
+
+.avatar--md {
+    --dim: 3.125rem;
+}
+
+.avatar--lg {
+    --dim: 4.25rem;
+}
