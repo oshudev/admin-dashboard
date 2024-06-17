@@ -1,1 +1,81 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --default-ff: "Roboto", sans-serif;
+
+    --font-size-100: 12px;
+    --font-size-200: 14px;
+    --font-size-300: 16px;
+    --font-size-400: 18px;
+    --font-size-500: 24px;
+
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    --spacing-100: 4px;
+    --spacing-200: 8px;
+    --spacing-300: 12px;
+    --spacing-400: 16px;
+    --spacing-500: 24px;
+    --spacing-600: 32px;
+
+    --primary-yellow: #facc15;
+    --secondary-blue: #1992d4;
+    --neutral-100: #ffffff;
+    --neutral-200: #e2e8f0;
+    --neutral-300: #d2d2d2;
+    --neutral-400: #636363;
+    --neutral-500: #18181b;
+    --neutral-600: #121212;
+
+    --rounding-regular: 8px;
+    --rounding-circle: 50%;
+    --rounding-pill: 999rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
