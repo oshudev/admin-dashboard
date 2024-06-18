@@ -121,6 +121,8 @@ ol {
     --dim: 2rem;
     display: block;
     padding: var(--spacing-100);
+    width: var(--dim);
+    height: var(--dim);
     background-color: var(--primary-yellow);
     border-radius: var(--rounding-circle);
 }
