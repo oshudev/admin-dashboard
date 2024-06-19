@@ -168,6 +168,8 @@ ol {
 .sidebar {
     position: sticky;
     max-width: 256px;
+    top: 0;
+    left: 0;
     height: 100vh;
     padding: var(--spacing-600) var(--spacing-300);
     font-weight: var(--font-medium);
@@ -236,6 +238,8 @@ ol {
 }
 
 .header {
+    position: sticky;
+    top: 0;
     display: grid;
     gap: var(--spacing-500);
     padding: var(--spacing-600) var(--spacing-700);
