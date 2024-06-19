@@ -10,6 +10,7 @@
     --font-size-500: 24px;
 
     --font-regular: 400;
+    --font-medium: 500;
     --font-semi-bold: 600;
     --font-bold: 700;
 
@@ -19,6 +20,8 @@
     --spacing-400: 16px;
     --spacing-500: 24px;
     --spacing-600: 32px;
+    --spacing-700: 56px;
+    --spacing-800: 64px;
 
     --primary-yellow: #facc15;
     --secondary-blue: #1992d4;
@@ -109,6 +112,7 @@ ol {
     border: 2px solid var(--secondary-blue);
     border-radius: var(--rounding-pill);
     transition: color 300ms ease, background-color 300ms ease;
+    cursor: pointer;
 }
 
 .button:hover,
@@ -135,11 +139,36 @@ ol {
     --dim: 4.25rem;
 }
 
+.search-box {
+    display: block;
+    width: 100%;
+    letter-spacing: 0.02em;
+    color: var(--neutral-400);
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.name {
+    font-weight: var(--font-bold);
+    font-size: var(--font-size-300);
+    letter-spacing: 0.02em;
+}
+
+.name--lg {
+    font-size: var(--font-size-500);
+}
+
+#app {
+    display: flex;
+}
+
 .sidebar {
     position: sticky;
     max-width: 256px;
     height: 100vh;
     padding: var(--spacing-600) var(--spacing-300);
+    font-weight: var(--font-medium);
     color: var(--neutral-100);
     background-color: var(--secondary-blue);
 }
@@ -148,7 +177,7 @@ ol {
     display: flex;
     align-items: center;
     column-gap: var(--spacing-300);
-    margin-bottom: 4rem;
+    margin-bottom: var(--spacing-800);
     padding-inline: var(--spacing-200);
     font-size: var(--font-size-500);
     font-weight: var(--font-bold);
@@ -174,7 +203,7 @@ ol {
     display: flex;
     align-items: center;
     column-gap: var(--spacing-200);
-    font-size: var(--font-size-400);
+    font-size: var(--font-size-300);
 }
 
 .sidebar__nav-item .sidebar-nav-link::before {
@@ -196,4 +225,56 @@ ol {
 
 .sidebar__nav-item .sidebar-nav-link img {
     width: 1.5rem;
+}
+
+.viewport {
+    flex: 1 1 0;
+}
+
+.header {
+    display: grid;
+    gap: var(--spacing-500);
+    padding: var(--spacing-600) var(--spacing-700);
+    background-color: var(--neutral-100);
+}
+
+.header__menu,
+.header__search,
+.header__icons-right,
+.header__profile,
+.header__greeting,
+.header__greeting > * {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__search {
+    gap: var(--spacing-100);
+    padding: var(--spacing-300) var(--spacing-200);
+    width: 45rem;
+    background-color: var(--neutral-200);
+    border-radius: var(--rounding-regular);
+}
+
+.header__icons-right,
+.header__profile {
+    gap: var(--spacing-500);
+}
+
+.header__notification {
+    display: block;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header__profile {
+    gap: var(--spacing-300);
+}
+
+.header__content,
+.header__controls {
+    gap: var(--spacing-600);
 }
